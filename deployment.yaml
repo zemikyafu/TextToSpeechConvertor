@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: texttospeech-deplyoment
+  name: texttospeech-deplyoment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: texttospeech-deplyoment
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: texttospeech-deplyoment
+    spec:
+      containers:
+      - image: docker.io/library/texttospeech
+        name: texttospeech
+        resources: {}
+        imagePullPolicy: Never
+status: {}

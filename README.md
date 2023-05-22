@@ -1,0 +1,1 @@
+Python text to speech convertor microservice with Azure and AWS cognitive services
